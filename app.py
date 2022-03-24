@@ -7,10 +7,10 @@ app = Flask(__name__)
 
 app.secret_key='a'
 
-app.config['MYSQL_HOST'] = 'remotemysql.com'
-app.config['MYSQL_USER'] = 'cmD4MqEFox'
-app.config['MYSQL_PASSWORD'] = 'szmvOT91Pl'
-app.config['MYSQL_DB'] = 'cmD4MqEFox'
+app.config['MYSQL_HOST'] = 'bdihhwvq65e7j10ztlsw-mysql.services.clever-cloud.com'
+app.config['MYSQL_USER'] = 'ua2ndonfprj4h4ly'
+app.config['MYSQL_PASSWORD'] = 'tBK9OD3uQUuaU9RdDvkV'
+app.config['MYSQL_DB'] = 'bdihhwvq65e7j10ztlsw'
 mysql = MySQL(app)
 
 @app.route('/')
@@ -236,4 +236,4 @@ def solved(no):
     return render_template('admincomphist.html',a="Complaint Resolved")
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=8080)
+    app.run(host='0.0.0.0')
